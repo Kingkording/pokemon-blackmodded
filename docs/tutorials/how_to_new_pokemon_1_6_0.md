@@ -815,7 +815,7 @@ And linking it in [sound/cry_tables.inc](https://github.com/rh-hideout/pokeemera
 
 Mon cries are 10512Hz. Make sure to put the aif file in the directory [sound/direct_sound_samples/cries](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/sound/direct_sound_samples/cries)
 
-Higher frequencies may be ruined by compression. To have the cries uncompressed, follow [this](https://github.com/ShinyDragonHunter/pokefirereddx/commit/71ba1c193082817afbed9a8a0ba1d123fffb6f36#diff-e1823f56db7c2344fb9ee843e3c42797f72fa1e108e13a7080018e1db545322eR116) , then clear out the old sound bins
+Higher frequencies may be ruined by compression. To have the cries uncompressed, follow [this](https://github.com/ShinyDragonHunter/pokefirereddx/commit/71ba1c193082817afbed9a8a0ba1d123fffb6f36#diff-e1823f56db7c2344fb9ee843e3c42797f72fa1e108e13a7080018e1db545322eR116), then clear out the old sound bins
 
 ## 7. Define the Evolutions
 
@@ -827,11 +827,12 @@ Edit [src/data/pokemon/evolution.h](https://github.com/rh-hideout/pokeemerald-ex
 ```diff
      [SPECIES_SNEASEL_HISUIAN]       = {{EVO_ITEM_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER},
                                        {EVO_ITEM_HOLD_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER}},
-+   [SPECIES_MEWTWO]                = {{EVO_LEVEL, 100, SPECIES_MEWTHREE}},
 #endif
++   [SPECIES_MEWTWO]                = {{EVO_LEVEL, 100, SPECIES_MEWTHREE}},
+```
+{% endraw %}
 
 ## 8. Easy Chat about your Pokémon
-
 
 Edit [src/data/easy_chat/easy_chat_words_by_letter.h](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/src/data/easy_chat/easy_chat_words_by_letter.h):
 
